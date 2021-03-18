@@ -1,6 +1,6 @@
 package application;
 
-import Queue.Queue;
+import queue.Queue;
 import stack.Stack;
 
 public class Main {

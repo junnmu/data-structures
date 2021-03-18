@@ -13,11 +13,10 @@ public class Stack {
 
     public int pop() throws Exception {
         if (this.size > 0) {
-            Node node;
-            node = this.top;
+            int elem = this.top.data;
             this.top = this.top.next;
             this.size--;
-            return node.data;
+            return elem;
         }
         throw new Exception("The stack is empty");
     }

@@ -1,12 +1,19 @@
 package application;
 
+import binarysearch.BinarySearch;
 import linkedlist.LinkedList;
 import queue.Queue;
 import stack.Stack;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-        // LinkedList testing"
+
+        /*
+        // LinkedList testing
         System.out.println("---LINKED LIST---");
         LinkedList linkedList = new LinkedList();
         linkedList.append(18);
@@ -41,5 +48,11 @@ public class Main {
         System.out.println("First element: " + queue.peek());
         System.out.println("Queue size: " + queue.size());
         System.out.println("Elements: " + queue.toString());
+         */
+
+        // Recursive binary search algorithm testing
+        BinarySearch binarySearch = new BinarySearch();
+        List<Integer> list = new ArrayList<>(Arrays.asList(5, 10, 25, 38, 45, 66, 88, 90));
+        System.out.println("Index: " + binarySearch.search(list, 10, 0, list.size()));
     }
 }

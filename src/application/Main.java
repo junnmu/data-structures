@@ -53,6 +53,7 @@ public class Main {
         // Recursive binary search algorithm testing
         BinarySearch binarySearch = new BinarySearch();
         List<Integer> list = new ArrayList<>(Arrays.asList(5, 10, 25, 38, 45, 66, 88, 90));
-        System.out.println("Index: " + binarySearch.search(list, 10, 0, list.size()));
+        System.out.println("Index: " + binarySearch.looping(list, 10, 0, list.size()));
+        System.out.println("Index: " + binarySearch.recursive(list, 10, 0, list.size()));
     }
 }
